@@ -1,0 +1,22 @@
+
+
+.parent{
+    border: 1px solid black;
+    position: sticky;
+    left: 50px;
+    top: 60px;
+    margin: 0px;
+}
+
+.child{
+    position: fixed;
+    border: 1px solid black;
+    left: 408px;
+    top: 208px;
+    color: purple;
+    background-color: black;
+}
+
+nav ul{
+    list-style: none;
+}
