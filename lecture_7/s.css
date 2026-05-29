@@ -1,0 +1,51 @@
+@media (max-width:768px){
+    body{
+        background-color: aqua;
+    }
+}
+@media(min-width:900px){
+    body{
+        background-color: pink;
+    }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  body{
+    background-color: blue;
+  }
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    transition: 2s;
+    width: 200px;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    transform: scale(1.2);
+    background-color: aqua;
+}
+.card{
+    transition: 1s;
+}
+.card:hover{
+    transform: rotate(180deg);
+    background-color: aqua;
+}
+@keyframes move{
+from{
+transform:translateX(0);
+}
+to{
+transform:translateX(300px);
+}}
+.box{
+animation: move 2s;
+animation-iteration-count: infinite;
+}
