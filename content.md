@@ -1,0 +1,1 @@
+Lecture 1 --> basic tags of Html (heading, paragraph, links, image and list)
