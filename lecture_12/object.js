@@ -46,7 +46,7 @@ let person={
 };
 console.log(person);
 
-let array=[a={name:"a"},b={name:"b"},c={name:"c"}];
+let array=[{name:"a"},{name:"b"},{name:"c"}];
 console.log(array);
 console.log(person.address.city);
 console.log(person["address"]["city"]);
@@ -71,7 +71,7 @@ let {name,age}=student;
 console.log(name);
 console.log(age);
 
-// sprad operator
+// spread operator
 let arr1=[1,2,3,4,5];
 let arr2=[...arr1];
 
@@ -121,8 +121,10 @@ console.log(Object.entries(student));
 let copy=Object.assign({},student);
 console.log(copy);
 
+//shallow copy
 let copy1={...student};
 console.log(copy1);
+
 // in Operator
 console.log("name" in student);
 
@@ -142,5 +144,6 @@ Object.seal(student);
 student.age=24;
 console.log(student);
 
+// deep copy
 const sdf=structuredClone(student);
 console.log(sdf);
