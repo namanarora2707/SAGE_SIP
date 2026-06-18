@@ -9,3 +9,6 @@ Lecture 08 --> Bootstrap and Tailwind and Assignment
 Lecture 09 --> Basics Of Javascript (Variables, data types, declarations)
 Lecture 10 --> Continue of Javascript ( Functions, loops and hoisting)
 Lecture 11 --> Continue of Javascript ( Closures and Array)
+Lecture 12 --> Continue of Javascript (Strings and object)
+Lecture 13 --> Continue of Javascript (ques on Map reduce and filter)
+Lecture 14 --> Continue of Javascript (ques on Map reduce and filter)
