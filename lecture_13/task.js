@@ -115,3 +115,68 @@ const q9=marks1.reduce(function(total,n){
 const q9arr=marks1.reduce((total,n)=>total+=n,0)/marks1.length;
 console.log(q9);
 console.log(q9arr);
+
+// Question 10
+
+const fruits = [
+"apple",
+"banana",
+"apple",
+"orange",
+"banana",
+"apple"
+];
+
+const q10=fruits.reduce(function(occ,fruit){
+    occ[fruit]=(occ[fruit]||0)+1;
+    return occ;
+},{});
+
+const q10arr=fruits.reduce((occ,fruit)=>{occ[fruit]=(occ[fruit]||0)+1; return occ},{});
+
+console.log(q10);
+console.log(q10arr);
+
+// Question 12
+const students2 = [
+{
+name: "Utkarsh",
+marks: [80, 90, 85]
+},
+{
+name: "Yukta",
+marks: [95, 92, 98]
+},
+{
+name: " Navneet",
+marks: [60, 70, 65]
+}
+];
+
+const q12arr=(students2.map((s)=>{
+    return{
+        name:s.name,
+        avg:s.marks.reduce((total,m)=>{
+            return total+m;
+        },0)/s.marks.length
+    };
+})).filter(s=>s.avg>=85)
+.sort((a,b)=>b.avg-a.avg) 
+.map(s=>s.name);
+console.log(q12arr);
+// Question 13
+
+const products1 = [
+{ name: "Laptop", category: "Electronics" },
+{ name: "Phone", category: "Electronics" },
+{ name: "Shirt", category: "Clothing" }
+];
+
+const q13=products1.reduce(function(group,product){
+    if(!group[product.category]){
+        group[product.category]=[];
+    }
+    group[product.category].push(product.name);
+    return group;
+},{});
+console.log(q13);
