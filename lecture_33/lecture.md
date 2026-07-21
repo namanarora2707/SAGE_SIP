@@ -1,0 +1,1 @@
+doubts and query on their project and quesry on mysql

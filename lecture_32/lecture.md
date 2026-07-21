@@ -1,0 +1,1 @@
+Doubts solve and questions regarding project and query on mongodb
